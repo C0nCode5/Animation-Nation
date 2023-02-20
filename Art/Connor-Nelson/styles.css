@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+@keyframes example {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes example2 {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+.container {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.box1 {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.box2 {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
